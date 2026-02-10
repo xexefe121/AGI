@@ -1,0 +1,31 @@
+{
+  "name": "repo-demo-video",
+  "version": "1.0.0",
+  "description": "Motion graphics demo videos for the sim repository",
+  "main": "src/index.ts",
+  "scripts": {
+    "video:studio": "remotion studio src/index.ts",
+    "video:render:1m": "remotion render src/index.ts AGILaunch-1min h:/video/agi-launch-1min.mp4 --codec=h264 --crf=18",
+    "video:render": "npm run video:render:1m"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@remotion/three": "^4.0.420",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.420",
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.420",
+    "@types/react": "^19.2.2",
+    "@types/three": "^0.182.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "agi-autonomous-geonavigation-intelligence",
+  "version": "1.0.0",
+  "description": "AGI (Autonomous Geonavigation Intelligence): robot geonavigation and simulation powered by MuJoCo, Cesium, and React.",
+  "main": "index.js",
+  "scripts": {
+    "deploy:web": "dotenv -e .env -- ./scripts/deploy-web.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv-cli": "^7.4.2",
+    "wrangler": "^4.42.0"
+  }
+}
